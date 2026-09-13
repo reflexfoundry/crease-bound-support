@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crease Bound — Support</title>
+<style>
+  :root {
+    --bg: #f5f1e8;
+    --panel: #fffdf7;
+    --ink: #2c2a26;
+    --muted: #6b675e;
+    --rule: #ddd6c6;
+    --accent: #b4553a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1a18;
+      --panel: #232120;
+      --ink: #ece7dc;
+      --muted: #a39d92;
+      --rule: #3a3734;
+      --accent: #e0846a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 2px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .75rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.25rem 1.4rem;
+    margin: 1.25rem 0;
+  }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 1.1rem; }
+  dt:first-child { margin-top: 0; }
+  dd { margin: .3rem 0 0; color: var(--muted); }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Crease Bound</h1>
+    <p class="tagline">Support &amp; contact</p>
+  </header>
+
+  <p>Crease Bound is a turn-based puzzle game for iPhone and iPad. You fold one outer
+  edge of a notebook page inward per move, guiding a doodle to its exit before the
+  scribble monsters or the rising ink tide catch it.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Get in touch</h2>
+    <p>Questions, bug reports, or feedback are welcome. Email
+    <a href="mailto:venkatb.techno@gmail.com">venkatb.techno@gmail.com</a> and I'll get back to
+    you.</p>
+    <p style="margin-bottom:0">It helps to include your device model, your iOS
+    version, and the level number where the problem happened.</p>
+  </div>
+
+  <h2>Common questions</h2>
+  <dl>
+    <dt>How is my progress saved?</dt>
+    <dd>Entirely on your device. Completing a level records it immediately, so
+    closing the app — even force-quitting mid-level — never loses a solved level.</dd>
+
+    <dt>Is there an account or a sign-in?</dt>
+    <dd>No. Crease Bound is single-player and works fully offline. There is nothing
+    to register and no server to connect to.</dd>
+
+    <dt>Does the game need an internet connection?</dt>
+    <dd>No. Every level ships inside the app and no network request is ever made.</dd>
+
+    <dt>Can I replay a level I've already solved?</dt>
+    <dd>Yes. Any unlocked level can be replayed from the level select grid at any
+    time.</dd>
+
+    <dt>I'm stuck on a level. Is it definitely solvable?</dt>
+    <dd>Yes. Every level ships with a verified solution — each one was checked by a
+    solver against the same rules the game plays by, so none is impossible.</dd>
+
+    <dt>Can I undo a move?</dt>
+    <dd>Yes. Undo restores the exact previous state of the board, including monster
+    positions.</dd>
+
+    <dt>How do I turn off sound or haptics?</dt>
+    <dd>Open Settings from the pause menu or the Home screen. Sound and haptics are
+    controlled separately.</dd>
+
+    <dt>I use Reduce Motion. Does the game still work?</dt>
+    <dd>Yes. With Reduce Motion enabled, animations are simplified but no gameplay
+    information is lost.</dd>
+
+    <dt>What devices are supported?</dt>
+    <dd>iPhone and iPad running iOS 26 or later. The game is played in portrait.</dd>
+  </dl>
+
+  <h2>Privacy</h2>
+  <p>Crease Bound collects no data, contains no ads or analytics, and makes no
+  network requests. See the <a href="privacy.html">privacy policy</a> for details.</p>
+
+  <footer>
+    <p>Crease Bound &middot; Support</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -20,6 +20,7 @@
     --runner: #db4f29;
     --skitter: #1a7385;
     --crosser: #a81f6b;
+    --watcher: #1c4fad;
     --exit: #42d185;
     --tide: #21175c;
   }
@@ -279,6 +280,31 @@
       </div>
     </div>
 
+    <!-- Line Watcher -->
+    <div class="who" style="--c: var(--watcher)">
+      <svg viewBox="0 0 64 64" role="img" aria-label="Line Watcher, a blue monster with a crosshair">
+        <path d="M32 6 C41 6 46 13 47 21 C48 29 48 36 46 43 C43 51 38 56 32 56 C26 56 21 51 18 43 C16 36 16 29 17 21 C18 13 23 6 32 6 Z" fill="#4280e0"/>
+        <path d="M32 6 C41 6 46 13 47 21 C48 29 48 36 46 43 C43 51 38 56 32 56 C26 56 21 51 18 43 C16 36 16 29 17 21 C18 13 23 6 32 6 Z" fill="none" stroke="#1c4fad" stroke-width="2.2"/>
+        <circle cx="26" cy="25" r="6" fill="#fffdf7"/>
+        <circle cx="38" cy="25" r="6" fill="#fffdf7"/>
+        <circle cx="26" cy="25" r="2.8" fill="#0a1f47"/>
+        <circle cx="38" cy="25" r="2.8" fill="#0a1f47"/>
+        <path d="M26 40 L38 40" stroke="#0a1f47" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="32" y1="0" x2="32" y2="64" stroke="#1c4fad" stroke-width="1.6" stroke-dasharray="3 3" opacity=".7"/>
+        <line x1="0" y1="32" x2="64" y2="32" stroke="#1c4fad" stroke-width="1.6" stroke-dasharray="3 3" opacity=".7"/>
+      </svg>
+      <div>
+        <h3>Line Watcher</h3>
+        <span class="role">Wakes when you line up</span>
+        <p>The Line Watcher sits perfectly still &mdash; until the Doodle comes within
+        one line of it: its row or column, or the one right beside it. Then it wakes up
+        and chases like Scribble, one step every fold.</p>
+        <p class="tip"><strong>Watch out:</strong> once it is awake it never goes back
+        to sleep, because folding only ever brings things closer together. Keep out of
+        its lines for as long as you can. It first appears at Level 71.</p>
+      </div>
+    </div>
+
     <!-- Ink Tide -->
     <div class="who" style="--c: var(--tide)">
       <svg viewBox="0 0 64 64" role="img" aria-label="The Ink Tide, a dark rising wave">
@@ -311,7 +337,7 @@
   <div class="card" id="power-boost">
     <h2 style="margin-top:0">The Power Boost
       <span style="font-size:.7rem; font-weight:600; letter-spacing:.04em;
-      text-transform:uppercase; color:var(--accent);">New in 2.0</span></h2>
+      text-transform:uppercase; color:var(--accent);">Updated in 3.0</span></h2>
     <p>Beaten by a level? A Power Boost is a pushpin you can spend to pin
     <strong>any one monster</strong> where it stands. A pinned monster stops moving
     and can no longer catch the Doodle for the rest of that attempt. It stays on the
@@ -321,13 +347,14 @@
     raise the ink tide.</p>
     <ul>
       <li>You start with <strong>3</strong>.</li>
-      <li>You earn <strong>one more for every 5 levels you complete</strong>, up to a
-      maximum of 10. Replaying a level you have already solved does not earn more.</li>
-      <li><strong>Restart gives them back.</strong> Restarting a level returns every
-      Power Boost you spent on that attempt, so pinning the wrong monster costs you
-      nothing but the restart.</li>
-      <li>They <strong>cannot be bought</strong>. Crease Bound has no in-app
-      purchases and no ads &mdash; playing is the only way to earn them.</li>
+      <li>You earn <strong>one more for every 5 levels you complete</strong>. There is
+      no limit on how many you can hold. Replaying a level you have already solved does
+      not earn more.</li>
+      <li><strong>A Power Boost you use is gone.</strong> Restarting the level does not
+      give it back, so choose your monster carefully.</li>
+      <li>If you run out, you can <strong>buy more</strong>: 7 or 20, as an in-app
+      purchase. The store only appears when you have none left. Crease Bound has no
+      ads.</li>
     </ul>
     <p style="margin-bottom:0">Finishing a level with a Power Boost still completes
     it and still unlocks the next one. A Power Boost cannot rescue an attempt that has
@@ -345,7 +372,8 @@
     to register and no server to connect to.</dd>
 
     <dt>Does the game need an internet connection?</dt>
-    <dd>No. Every level ships inside the app and no network request is ever made.</dd>
+    <dd>No. Every level ships inside the app and the game makes no network requests of
+    its own. Only buying Power Boosts needs a connection, to reach the App Store.</dd>
 
     <dt>Can I replay a level I've already solved?</dt>
     <dd>Yes. Any unlocked level can be replayed from the level select grid at any
@@ -358,32 +386,34 @@
     <dt>Can I undo a move?</dt>
     <dd>Not from version 2.0 onwards. <strong>Restart</strong> is the way back, and it
     is always available from the board and from the pause menu. Restarting begins the
-    level again from the start and returns any Power Boosts you spent on that
-    attempt.</dd>
+    level again from the start. From version 3.0 it does <strong>not</strong> return
+    Power Boosts you spent on that attempt.</dd>
 
     <dt>What is the Power Boost, and how do I get more?</dt>
     <dd>It pins one monster in place for the rest of the attempt, so it can no longer
     chase the Doodle. You start with 3 and earn one more for every 5 levels you
-    complete, up to 10. See <a href="#power-boost">The Power Boost</a> above.</dd>
+    complete. See <a href="#power-boost">The Power Boost</a> above.</dd>
 
     <dt>Do Power Boosts cost money?</dt>
-    <dd>No. There are no in-app purchases, no ads, and no currency that can be bought.
-    Power Boosts are earned by playing, and nothing in the game can be paid for.</dd>
+    <dd>They don't have to. You earn them by playing, and every level can be solved
+    without one. If you run out, you can buy 7 or 20 more as an in-app purchase. There
+    are no ads, no subscriptions, and nothing else for sale.</dd>
 
     <dt>How many levels are there?</dt>
-    <dd>Seventy. Levels 1&ndash;50 teach the four monsters and the ink tide; Levels
-    51&ndash;70 are two late-game chapters that add no new rules at all &mdash; they
-    are the hardest puzzles in the game, built entirely from what you already know.</dd>
+    <dd>One hundred. Levels 1&ndash;50 teach the first four monsters and the ink tide;
+    Levels 51&ndash;70 are two late-game chapters that add no new rules. Levels
+    71&ndash;85 bring in the fifth and final monster, the Line Watcher, on the
+    biggest pages in the game, and Levels 86&ndash;100 close the book with the
+    hardest puzzles of all &mdash; again with no new rules.</dd>
 
-    <dt>I played version 1.0 &mdash; do I keep my progress?</dt>
-    <dd>Yes. Updating keeps every level you have completed. You also receive the 3
-    starting Power Boosts, plus any you have already earned from the levels you had
-    finished before updating.</dd>
+    <dt>I played an earlier version &mdash; do I keep my progress?</dt>
+    <dd>Yes. Updating keeps every level you have completed and every Power Boost you
+    hold. Coming from 1.0, you also receive the 3 starting Power Boosts.</dd>
 
     <dt>When do the new monsters appear?</dt>
     <dd>Scribble is there from the start. The Crease Runner joins at Level 16, the
-    Fold Skitter at Level 31, and the Crease Crosser at Level 41 — so each one gets
-    introduced on its own before they start mixing.</dd>
+    Fold Skitter at Level 31, the Crease Crosser at Level 41, and the Line Watcher at
+    Level 71 — so each one gets introduced on its own before they start mixing.</dd>
 
     <dt>How do I turn off sound or haptics?</dt>
     <dd>Open Settings from the pause menu or the Home screen. Sound and haptics are
@@ -400,6 +430,29 @@
   <h2 id="release-notes">Release notes</h2>
   <p class="lede">What changed in each version, newest first.</p>
   <dl>
+    <dt>Version 3.0</dt>
+    <dd>
+      <ul style="margin:.4rem 0 0; padding-left:1.1rem;">
+        <li><strong>Thirty new levels.</strong> The book now runs to 100, across four
+        new chapters: <em>The Watching Page</em>, <em>The Last Page</em>, <em>Margin
+        Notes</em> and <em>The Back Cover</em>.</li>
+        <li><strong>A new monster: the Line Watcher.</strong> It stays still until the
+        Doodle comes within one line of it, then chases for good. It is the fifth and
+        final monster.</li>
+        <li><strong>Bigger pages,</strong> up to 10 by 14, with a tighter layout on
+        smaller iPhones so every square stays easy to read and tap.</li>
+        <li><strong>Power Boosts are now used up for good.</strong> Restarting a level
+        no longer returns the ones you spent, and there is no longer a limit on how
+        many you can hold.</li>
+        <li><strong>Buy more Power Boosts</strong> if you run out: 7 or 20, as an
+        in-app purchase. The store only appears when you have none left. You still earn
+        one for every 5 levels you finish.</li>
+        <li>The Power Boost button now shows just the pushpin and your count.</li>
+        <li>No changes to Levels 1&ndash;70, their solutions, or the rules. Anything
+        solvable in 2.0 is solved the same way in 3.0.</li>
+      </ul>
+    </dd>
+
     <dt>Version 2.0</dt>
     <dd>
       <ul style="margin:.4rem 0 0; padding-left:1.1rem;">
@@ -440,13 +493,13 @@
   </dl>
 
   <h2>Privacy</h2>
-  <p>Crease Bound collects no data, contains no ads, analytics, or in-app purchases,
-  and makes no network requests. See the <a href="privacy.html">privacy policy</a> for
+  <p>Crease Bound collects no data, contains no ads or analytics, and makes no network
+  requests of its own. Power Boosts can be bought through the App Store. See the <a href="privacy.html">privacy policy</a> for
   details.</p>
 
   <footer>
-    <p>Crease Bound &middot; Support &middot; Page last updated 21 September 2026
-    (app version 2.0)</p>
+    <p>Crease Bound &middot; Support &middot; Page last updated 26 September 2026
+    (app version 3.0)</p>
   </footer>
 </main>
 </body>

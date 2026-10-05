@@ -119,7 +119,8 @@
 
   <p>Crease Bound is a turn-based puzzle game for iPhone and iPad. You fold one outer
   edge of a notebook page inward per move, guiding a doodle to its way out before the
-  scribble monsters or the rising ink tide catch it.</p>
+  scribble monsters or the rising ink tide catch it. To fold, swipe anywhere on the
+  page the way you want the paper to go: swipe left and the right edge folds over.</p>
 
   <div class="card">
     <h2 style="margin-top:0">Get in touch</h2>
@@ -337,7 +338,7 @@
   <div class="card" id="power-boost">
     <h2 style="margin-top:0">The Power Boost
       <span style="font-size:.7rem; font-weight:600; letter-spacing:.04em;
-      text-transform:uppercase; color:var(--accent);">Updated in 3.0</span></h2>
+      text-transform:uppercase; color:var(--accent);">Updated in 3.2</span></h2>
     <p>Beaten by a level? A Power Boost is a pushpin you can spend to pin
     <strong>any one monster</strong> where it stands. A pinned monster stops moving
     and can no longer catch the Doodle for the rest of that attempt. It stays on the
@@ -347,18 +348,44 @@
     raise the ink tide.</p>
     <ul>
       <li>You start with <strong>3</strong>.</li>
-      <li>You earn <strong>one more for every 5 levels you complete</strong>. There is
-      no limit on how many you can hold. Replaying a level you have already solved does
-      not earn more.</li>
+      <li>Every <strong>5 levels you complete</strong>, the results screen offers a
+      reward to <strong>collect: one Power Boost and one hint</strong>. If you leave
+      without collecting, the title screen keeps offering it until you do &mdash; it is
+      never lost. There is no limit on how many you can hold. Replaying a level you have
+      already solved does not earn more.</li>
       <li><strong>A Power Boost you use is gone.</strong> Restarting the level does not
       give it back, so choose your monster carefully.</li>
-      <li>If you run out, you can <strong>buy more</strong>: 7 or 20, as an in-app
-      purchase. The store only appears when you have none left. Crease Bound has no
-      ads.</li>
+      <li>If you run out, you can <strong>buy more</strong> as an in-app purchase:
+      <strong>7 Power Boosts with 5 free hints</strong>, or <strong>20 with 10 free
+      hints</strong>. The store only appears when you tap the pushpin or the light bulb
+      with none left. Crease Bound has no ads.</li>
     </ul>
     <p style="margin-bottom:0">Finishing a level with a Power Boost still completes
     it and still unlocks the next one. A Power Boost cannot rescue an attempt that has
     already ended, though, so spend it before you are caught.</p>
+  </div>
+
+  <div class="card" id="hints">
+    <h2 style="margin-top:0">Hints
+      <span style="font-size:.7rem; font-weight:600; letter-spacing:.04em;
+      text-transform:uppercase; color:var(--accent);">New in 3.2</span></h2>
+    <p>Can't see the way? Tap the <strong>light bulb</strong> next to the pushpin at
+    the bottom of the board. The edge of the page you should fold next lights up, with
+    an arrow showing which way to swipe, and the line above the buttons says it in
+    words. A hint shows you <strong>one fold</strong> &mdash; never the whole
+    solution &mdash; and it works out that fold from the page as it is right now, not
+    from the start of the level.</p>
+    <ul>
+      <li>You start with <strong>3</strong>, and collect one more with the Power Boost
+      every 5 levels you complete.</li>
+      <li>A hint is used up when it is shown, and restarting does not give it back.
+      Tapping the bulb again before you fold shows the same hint for free.</li>
+      <li>If there is no longer any way to win from the page in front of you, the hint
+      says so and <strong>is not used up</strong>. Restart, or pin a monster with a
+      Power Boost &mdash; that can open a way a fold alone cannot.</li>
+    </ul>
+    <p style="margin-bottom:0">Hints are optional. Every level can be solved without
+    one, and finishing a level with a hint still completes it.</p>
   </div>
 
   <h2>Common questions</h2>
@@ -373,7 +400,8 @@
 
     <dt>Does the game need an internet connection?</dt>
     <dd>No. Every level ships inside the app and the game makes no network requests of
-    its own. Only buying Power Boosts needs a connection, to reach the App Store.</dd>
+    its own. Only buying Power Boosts and hints needs a connection, to reach the App
+    Store.</dd>
 
     <dt>Can I replay a level I've already solved?</dt>
     <dd>Yes. Any unlocked level can be replayed from the level select grid at any
@@ -391,13 +419,19 @@
 
     <dt>What is the Power Boost, and how do I get more?</dt>
     <dd>It pins one monster in place for the rest of the attempt, so it can no longer
-    chase the Doodle. You start with 3 and earn one more for every 5 levels you
-    complete. See <a href="#power-boost">The Power Boost</a> above.</dd>
+    chase the Doodle. You start with 3, and every 5 levels you complete you collect one
+    more along with a hint. See <a href="#power-boost">The Power Boost</a> above.</dd>
 
-    <dt>Do Power Boosts cost money?</dt>
-    <dd>They don't have to. You earn them by playing, and every level can be solved
-    without one. If you run out, you can buy 7 or 20 more as an in-app purchase. There
-    are no ads, no subscriptions, and nothing else for sale.</dd>
+    <dt>How do hints work?</dt>
+    <dd>Tap the light bulb and one fold that still wins lights up on the page. It is
+    used up when shown, unless there is no way left to win, in which case it says so
+    and costs nothing. See <a href="#hints">Hints</a> above.</dd>
+
+    <dt>Do Power Boosts and hints cost money?</dt>
+    <dd>They don't have to. You earn both by playing, and every level can be solved
+    without either. If you run out, you can buy 7 Power Boosts with 5 hints, or 20
+    with 10 hints, as an in-app purchase. There are no ads, no subscriptions, and
+    nothing else for sale.</dd>
 
     <dt>How many levels are there?</dt>
     <dd>One hundred. Levels 1&ndash;50 teach the first four monsters and the ink tide;
@@ -408,7 +442,8 @@
 
     <dt>I played an earlier version &mdash; do I keep my progress?</dt>
     <dd>Yes. Updating keeps every level you have completed and every Power Boost you
-    hold. Coming from 1.0, you also receive the 3 starting Power Boosts.</dd>
+    hold. Coming from 1.0, you also receive the 3 starting Power Boosts, and updating
+    to 3.2 gives everyone the 3 starting hints.</dd>
 
     <dt>When do the new monsters appear?</dt>
     <dd>Scribble is there from the start. The Crease Runner joins at Level 16, the
@@ -430,6 +465,24 @@
   <h2 id="release-notes">Release notes</h2>
   <p class="lede">What changed in each version, newest first.</p>
   <dl>
+    <dt>Version 3.2</dt>
+    <dd>
+      <ul style="margin:.4rem 0 0; padding-left:1.1rem;">
+        <li><strong>New: hints.</strong> Tap the light bulb and one fold that still
+        wins lights up on the page. You start with 3. See <a href="#hints">Hints</a>.</li>
+        <li><strong>Rewards to collect.</strong> Every 5 levels, collect a Power Boost
+        and a hint on the results screen. A reward you leave there waits on the title
+        screen.</li>
+        <li><strong>Bundles now include free hints:</strong> 7 Power Boosts with 5
+        hints, or 20 with 10 hints. Same prices.</li>
+        <li><strong>Fold from anywhere.</strong> Swipe across the page the way you want
+        the paper to go &mdash; you no longer have to start at an edge, and swipes near
+        the bottom of the screen fold the page instead of switching apps. Dragging an
+        edge still works.</li>
+        <li>No changes to any level, its solution, or the rules.</li>
+      </ul>
+    </dd>
+
     <dt>Version 3.0</dt>
     <dd>
       <ul style="margin:.4rem 0 0; padding-left:1.1rem;">
@@ -494,7 +547,7 @@
 
   <h2>Privacy</h2>
   <p>Crease Bound collects no data, contains no ads or analytics, and makes no network
-  requests of its own. Power Boosts can be bought through the App Store. See the <a href="privacy.html">privacy policy</a> for
+  requests of its own. Power Boosts and hints can be bought through the App Store. See the <a href="privacy.html">privacy policy</a> for
   details.</p>
 
   <footer>
